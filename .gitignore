@@ -1,0 +1,40 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Logs
+*.log
+
+# Environments
+.env
+.venv
+venv/
+ENV/
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+
+# Python Installer
+pip-log.txt
+
+# Cache files
+*.cache
+
+# Local env files
+.env.local
+.env.*.local
+
+# VSCode
+.vscode/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Data files
+data/
+
+# Ignore all .csv files except the ones in the 'data/' directory
+!data/*.csv

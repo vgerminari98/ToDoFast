@@ -1,0 +1,24 @@
+version: '3'
+
+services:
+  meu-servico:
+    build: .
+    ports:
+      - "8000:8000"
+    depends_on:
+      - mongo
+      - rabbitmq
+    links:
+      - mongo
+      - rabbitmq
+      
+  mongo:
+    image: mongo:4.2.7-bionic
+    hostname: mongo
+    ports:
+      - 27017:27017
+    command: mongod
+    expose:
+      - 27017
+  rabbitmq:
+    image: rabbitmq:3.9
